@@ -15,11 +15,18 @@ class CreateMahasiswaTable extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
+            'nama' => [
+                'type'       => 'VARCHAR',
+                'constraint' => '10',
+            ],
             'npm' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '10',
             ],
             'alamat' => [
+                'type' => 'TEXT',
+            ],
+            'deskripsi' => [
                 'type' => 'TEXT',
             ],
             'created_at' => [

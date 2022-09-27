@@ -1,5 +1,7 @@
+<?= $this->extend('template') ?>
+<?= $this->Section('content') ?>
 <div class="p-4">
-    <a href="/create" type="button" class="btn btn-primary">Tambah</a>
+    <a href="/create" type="button" class="btn btn-primary mb-3"><i class="fa fa-plus"></i> Tambah</a>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -19,6 +21,7 @@
                     <td><?= $mhs['npm'] ?></td>
                     <td><?= $mhs['nama'] ?></td>
                     <td><?= $mhs['alamat'] ?></td>
+                    <td><?= $mhs['deskripsi'] ?></td>
                     <td><?= $mhs['created_at'] ?></td>
                     <td>
                         <div class="d-flex">
@@ -36,3 +39,4 @@
         </tbody>
     </table>
 </div>
+<?= $this->endSection() ?>
